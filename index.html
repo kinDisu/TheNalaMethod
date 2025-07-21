@@ -1,113 +1,609 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <title>The Nala Method</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <head>
+    <title>The Nala Method</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-  <style>
-    body {
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    }
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-    .logo-banner {
-      padding: 60px 20px 40px;
-      background-color: #f2e9e0;
-      margin-top: 50px;
-    }
+    <style>
+      body {
+        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      }
 
-    .logo-banner-img {
-      max-width: 300px;
-      height: auto;
-    }
+      .logo-banner {
+        padding: 60px 20px 40px;
+        background-color: #f2e9e0;
+        margin-top: 50px;
+      }
 
-    .tagline {
-      font-size: 18px;
-      margin-top: 15px;
-      color: #333;
-    }
+      .logo-banner-img {
+        max-width: 300px;
+        height: auto;
+      }
 
-    .section {
-      padding: 60px 20px;
-    }
+      .tagline {
+        font-size: 18px;
+        margin-top: 15px;
+        color: #333;
+      }
 
-    .btn-primary-custom {
-      background-color: #b28b84;
-      border-color: #b28b84;
-      color: white;
-    }
+      .section {
+        padding: 60px 20px;
+      }
 
-    .btn-primary-custom:hover {
-      background-color: #9f776f;
-      border-color: #9f776f;
-    }
+      .btn-primary-custom {
+        background-color: #b28b84;
+        border-color: #b28b84;
+        color: white;
+      }
 
-    h2 {
-      margin-bottom: 30px;
-    }
+      .btn-primary-custom:hover {
+        background-color: #9f776f;
+        border-color: #9f776f;
+      }
 
-    .navbar-brand {
-      font-weight: bold;
-    }
-  </style>
-</head>
-<body>
+      h2 {
+        margin-bottom: 30px;
+      }
 
-  <!-- Navbar -->
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>                        
-        </button>
-        <a class="navbar-brand" href="#myPage">The Nala Method</a>
+      .navbar-brand {
+        font-weight: bold;
+      }
+      
+      #services h4 {
+  font-weight: bold;
+  color: #5e4b47;
+}
+
+#services ul {
+  padding-left: 20px;
+}
+
+#services ul li {
+  margin-bottom: 5px;
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#myNavbar"
+          >
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#myPage">The Nala Method</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#joincleaners">For Cleaners / Join Us</a></li>
+            <li><a href="#hirecleaners">For Clients / Hire a Cleaner</a></li>
+            <li><a href="#contactus">Contact Us</a></li>
+            <li><a href="#faq">FAQs</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+            <li><a href="#legalpages">Legal Pages</a></li>
+          </ul>
+        </div>
       </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-          <li><a href="#joincleaners">For Cleaners / Join Us</a></li>
-          <li><a href="#hirecleaners">For Clients / Hire a Cleaner</a></li>
-          <li><a href="#contactus">Contact Us</a></li>
-          <li><a href="#faq">FAQs</a></li>
-          <li><a href="#pricing">Pricing</a></li>
-          <li><a href="#legalpages">Legal Pages</a></li>
-        </ul>
+    </nav>
+
+    <!-- Logo Banner -->
+    <div class="logo-banner text-center">
+      <img
+        src="images/logo.jpeg"
+        alt="The Nala Method Logo"
+        class="logo-banner-img"
+      />
+    </div>
+
+    <!-- About Section -->
+    <div id="about" class="container section text-left">
+      <div class="row">
+        <div class="col-md-8">
+          <h2>About Our Company</h2>
+          <h4>Who We Are</h4>
+          <p>
+            At The Nala Method, we bring intention, elegance, and discretion to
+            every home we serve. Our curated services are thoughtfully designed
+            for households that value excellence and gentle care.
+          </p>
+          <p><strong>✨ Our Expertise Includes:</strong></p>
+          <ul>
+            <li>
+              <strong>Premium Domestic Staff Placement:</strong> Carefully
+              selected and trained individuals matched to your lifestyle and
+              household needs.
+            </li>
+            <li>
+              <strong>Boutique Homekeeping & Cleaning:</strong> Immaculate,
+              detail-driven care using gentle, effective methods and trusted
+              products.
+            </li>
+            <li>
+              <strong>Lifestyle Support & Home Assistance:</strong> From daily
+              routines to seasonal refreshes, we help create seamless, well-run
+              homes.
+            </li>
+            <li>
+              <strong>Discreet & Professional Service:</strong> Every team
+              member is vetted, insured, and trained in the Nala Method —
+              combining grace, precision, and confidentiality.
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <img
+            src="images/cleaning1.jpg"
+            class="img-responsive"
+            alt="glass table beig cleaned"
+          />
+        </div>
       </div>
     </div>
-  </nav>
 
-  <!-- Logo Banner -->
-  <div class="logo-banner text-center">
-    <img src="images/logo.jpeg" alt="The Nala Method Logo" class="logo-banner-img">
-    <p class="tagline">We specialize in blablabla</p>
-  </div>
-
-  <!-- About Section -->
-  <div id="about" class="container section text-left">
+   <!-- Services Section -->
+<div id="services" class="container-fluid" style="background-color: #f2e9e0; padding: 60px 20px;">
+  <div class="container text-left">
     <div class="row">
-      <div class="col-md-8">
-        <h2>About Our Company</h2>
-        <h4>Who We Are</h4>
-        <p>At The Nala Method, we bring intention, elegance, and discretion to every home we serve. Our curated services are thoughtfully designed for households that value excellence and gentle care.</p>
-        <p><strong>✨ Our Expertise Includes:</strong></p>
-        <ul>
-          <li><strong>Premium Domestic Staff Placement:</strong> Carefully selected and trained individuals matched to your lifestyle and household needs.</li>
-          <li><strong>Boutique Homekeeping & Cleaning:</strong> Immaculate, detail-driven care using gentle, effective methods and trusted products.</li>
-          <li><strong>Lifestyle Support & Home Assistance:</strong> From daily routines to seasonal refreshes, we help create seamless, well-run homes.</li>
-          <li><strong>Discreet & Professional Service:</strong> Every team member is vetted, insured, and trained in the Nala Method — combining grace, precision, and confidentiality.</li>
-        </ul>
+      <div class="col-md-12">
+        <h2 class="text-center">💎 Our Services</h2>
+        <p class="lead text-center">At The Nala Method, we believe home care is both a craft and a calling. Our curated offerings connect discerning clients with dedicated professionals — blending grace, reliability, and excellence in every detail.</p>
       </div>
-      <div class="col-md-4">
-        <img src="images/cleaning1.jpg" class="img-responsive" alt="glass table beig cleaned">
+    </div>
+
+    <div class="row" style="margin-top: 40px;">
+      <div class="col-md-6">
+        <h4>🏡 Live-In Housekeeper</h4>
+        <ul>
+          <li>Full-time, live-in presence for daily home care</li>
+          <li>Light cooking, cleaning, laundry & errands</li>
+          <li>Trusted placements with long-term discretion</li>
+          <li>Ideal for households needing consistent, all-around help</li>
+        </ul>
+        <p><strong>📍 Available 5–6 days/week with private accommodation provided</strong></p>
+      </div>
+
+      <div class="col-md-6">
+        <h4>⏰ Part-Time Housekeeper</h4>
+        <ul>
+          <li>Scheduled weekly or bi-weekly service</li>
+          <li>Light to moderate cleaning tasks</li>
+          <li>Laundry, ironing & home organization</li>
+          <li>Ideal for apartments or smaller households</li>
+        </ul>
+        <p><strong>📅 2–5 days/week | Morning or afternoon slots</strong></p>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 40px;">
+      <div class="col-md-6">
+        <h4>📆 Temporary Housekeeper</h4>
+        <ul>
+          <li>Coverage during staff holidays or travel</li>
+          <li>Special event prep or post-renovation cleaning</li>
+          <li>Emergency placements available</li>
+          <li>Discreet and ready-to-work professionals</li>
+        </ul>
+        <p><strong>⏳ From 1 day to 3 months | Book with short notice</strong></p>
+      </div>
+
+      <div class="col-md-6">
+        <h4>✨ Specialised Cleaning</h4>
+        <ul>
+          <li>Deep cleaning of luxury surfaces and finishes</li>
+          <li>Antiques, marble, brass, and delicate care</li>
+          <li>Eco-friendly and allergy-sensitive options</li>
+          <li>Closet detox, pantry resets & detailed organizing</li>
+        </ul>
+        <p><strong>🎯 Ideal for curated interiors, post-project refreshes</strong></p>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 40px;">
+      <div class="col-md-12">
+        <h4>🧼 Residential Cleaning</h4>
+        <ul>
+          <li>Regular cleaning routines, done the Nala way</li>
+          <li>Kitchen, bathroom, floors, dusting & more</li>
+          <li>Laundry services (on request)</li>
+          <li>Personalized checklist for every client</li>
+        </ul>
+        <p><strong>🗓️ Weekly, bi-weekly or monthly options</strong></p>
+      </div>
+    </div>
+
+    <div class="row text-center" style="margin-top: 50px;">
+      <div class="col-md-12">
+        <h4>📩 Not sure where to begin?</h4>
+        <p>Let us curate a placement plan that fits your home perfectly.</p>
+        <a href="#contactus" class="btn btn-primary-custom">Book a Consultation</a>
+        <a href="#contactus" class="btn btn-default" style="margin-left: 10px;">Speak to Our Placement Team</a>
       </div>
     </div>
   </div>
+</div>
+<!-- Copy-and-Paste Employee Sign-Up Form -->
+<div id="joincleaners" class="container-fluid" style="background-color: white; padding: 60px 20px;">
+  <div class="container">
+    <h2 class="text-center">Join Our Trusted Team</h2>
+    <p class="lead text-center">
+      Are you a skilled housekeeper or cleaner passionate about detail, care, and discretion?  
+      Copy the form below, fill in your answers, and send it along with your documents to  
+      <a href="mailto:kitandisu07@gmail.com">kitandisu07@gmail.com</a>.
+    </p>
 
-</body>
+    <div class="form-group">
+      <label for="applicationTemplate"><strong>📋 Copy and Fill In This Form:</strong></label>
+      <textarea id="applicationTemplate" class="form-control" rows="24" readonly onclick="this.select()">
+
+👤 PERSONAL INFORMATION
+Full Name:
+Phone Number:
+Email Address:
+City & Postcode:
+Do you have the legal right to work in the UK? (Yes / No):
+
+📄 EXPERIENCE & SKILLS
+Position Applying For:
+(Choose one: Live-In Housekeeper, Part-Time Cleaner, Temporary Cover, Specialist Cleaning, Other)
+
+Years of Experience:
+Do you have private home experience? (Yes / No):
+
+Skills:
+(Please type YES or NO next to each)
+- Laundry & Ironing:
+- Deep Cleaning:
+- Cooking:
+- Childcare:
+- Elderly Care:
+- Pet Care:
+
+Languages Spoken (optional):
+
+📆 AVAILABILITY
+Days Available (e.g. Mon–Fri):
+Hours Available (e.g. Morning / Afternoon / Evening):
+Available for live-in positions? (Yes / No):
+
+🔐 ATTACHMENTS — Please include with your email:
+- CV / Resume
+- ID (e.g. passport or driver’s license)
+- A clear photo (optional)
+- References (optional)
+
+📝 FINAL STEP
+Why do you want to work with us?
+
+✅ I confirm the above information is true.
+      </textarea>
+    </div>
+
+    <div class="text-center">
+      <a href="mailto:kitandisu07@gmail.com?subject=Application%20to%20Join%20The%20Nala%20Method" class="btn btn-primary-custom">✉️ Send My Application</a>
+    </div>
+  </div>
+</div>
+<!-- For Clients Section -->
+<div id="hirecleaners" class="container-fluid" style="background-color: #f2e9e0; padding: 60px 20px;">
+  <div class="container text-left">
+    <h2 class="text-center">Hire a Trusted Housekeeper</h2>
+    <p class="lead text-center">Looking for reliable, detail-oriented help in your home? Let us connect you with a discreet and experienced housekeeper, tailored to your lifestyle and household needs.</p>
+
+    <p><strong>📌 How to Book:</strong></p>
+    <ul>
+      <li>Review our <a href="#services">services section</a> to see what’s right for your home.</li>
+      <li>Then email us at <a href="mailto:kitandisu07@gmail.com">kitandisu07@gmail.com</a> with a short message including:</li>
+    </ul>
+
+    <div class="well" style="background-color: #ffffff; border-left: 5px solid #b28b84;">
+      <p><strong>📋 Please include:</strong></p>
+      <ul>
+        <li>Your full name</li>
+        <li>Your postcode or area</li>
+        <li>The type of help you’re looking for (e.g. live-in, part-time)</li>
+        <li>Your preferred days/times</li>
+        <li>Any special requests (e.g. childcare, pets, allergies)</li>
+      </ul>
+    </div>
+
+    <div class="text-center" style="margin-top: 20px;">
+      <a href="mailto:kitandisu07@gmail.com?subject=Cleaner%20Booking%20Request" class="btn btn-primary-custom">✉️ Email Your Request</a>
+    </div>
+  </div>
+</div>
+<!-- Contact Us Section -->
+<div id="contactus" class="container-fluid" style="background-color: white; padding: 60px 20px;">
+  <div class="container text-center">
+    <h2>Contact Us</h2>
+    <p class="lead">Have a question or want to learn more about The Nala Method?</p>
+    <p>Send us an email at <a href="mailto:kitandisu07@gmail.com">kitandisu07@gmail.com</a> and we’ll get back to you shortly.</p>
+    <p><em>Please include your name, contact number, and a short message.</em></p>
+
+    <a href="mailto:kitandisu07@gmail.com" class="btn btn-primary-custom">✉️ Email Us</a>
+  </div>
+</div>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/447123456789?text=Hello!%20I%20found%20your%20website%20and%20I'd%20like%20to%20learn%20more%20about%20your%20services."
+   class="whatsapp-float"
+   target="_blank"
+   title="Chat with us on WhatsApp">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp" />
+</a>
+
+<style>
+  .whatsapp-float {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    z-index: 1000;
+    background-color: #25d366;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+  }
+
+  .whatsapp-float:hover {
+    transform: scale(1.1);
+    background-color: #1ebc5d;
+  }
+
+  .whatsapp-float img {
+    width: 32px;
+    height: 32px;
+  }
+</style>
+<!-- FAQs Section -->
+<div id="faq" class="container-fluid" style="background-color: #f2e9e0; padding: 60px 20px;">
+  <div class="container">
+    <h2 class="text-center">Frequently Asked Questions</h2>
+
+    <div class="panel-group" id="accordion">
+      <!-- Question 1 -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#faq1">How do I book a housekeeper?</a>
+          </h4>
+        </div>
+        <div id="faq1" class="panel-collapse collapse">
+          <div class="panel-body">
+            Simply email us at <a href="mailto:kitandisu07@gmail.com">kitandisu07@gmail.com</a> with your name, location, the type of help you need, and your preferred schedule. We'll be in touch to discuss the next steps.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#faq2">Are your housekeepers vetted?</a>
+          </h4>
+        </div>
+        <div id="faq2" class="panel-collapse collapse">
+          <div class="panel-body">
+            Yes. Every member of our team is interviewed, reference-checked, and trained in The Nala Method — prioritising professionalism, discretion, and care.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#faq3">What areas do you cover?</a>
+          </h4>
+        </div>
+        <div id="faq3" class="panel-collapse collapse">
+          <div class="panel-body">
+            We currently serve households across Greater London. If you’re based outside this area, feel free to get in touch — we may still be able to help.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#faq4">What types of placements do you offer?</a>
+          </h4>
+        </div>
+        <div id="faq4" class="panel-collapse collapse">
+          <div class="panel-body">
+            We offer live-in, part-time, and temporary housekeeping placements — as well as specialist cleaning and home assistance services.
+          </div>
+        </div>
+      </div>
+
+      <!-- Question 5 -->
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#faq5">I’m a cleaner — how do I apply?</a>
+          </h4>
+        </div>
+        <div id="faq5" class="panel-collapse collapse">
+          <div class="panel-body">
+            Visit the <a href="#joincleaners">“Join Us”</a> section and follow the simple steps to apply. We look forward to hearing from you!
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Pricing Section -->
+<div id="pricing" class="container-fluid" style="background-color: #f2e9e0; padding: 60px 20px;">
+  <div class="container text-center">
+    <h2>Our Pricing</h2>
+    <p class="lead">Transparent, simple pricing for every type of household need.</p>
+
+    <div class="row" style="margin-top: 40px;">
+      <!-- Live-In Housekeeper -->
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3>🏡 Live-In Housekeeper</h3></div>
+          <div class="panel-body">
+            <p>Full-time, on-site support with accommodation provided.</p>
+            <p><strong>From: <span style="color: #b28b84;">£___ per week</span></strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Part-Time Housekeeper -->
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3>⏰ Part-Time Housekeeper</h3></div>
+          <div class="panel-body">
+            <p>Flexible support on scheduled days.</p>
+            <p><strong>From: <span style="color: #b28b84;">£___ per hour</span></strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Temporary Cover -->
+      <div class="col-sm-4">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3>📆 Temporary Cover</h3></div>
+          <div class="panel-body">
+            <p>Short-term placement for seasonal or urgent needs.</p>
+            <p><strong>From: <span style="color: #b28b84;">£___ per day</span></strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Second row of pricing -->
+    <div class="row" style="margin-top: 20px;">
+      <!-- Specialist Cleaning -->
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3>✨ Specialist Cleaning</h3></div>
+          <div class="panel-body">
+            <p>Tailored care for luxury surfaces and detailed organising.</p>
+            <p><strong>From: <span style="color: #b28b84;">£___ per visit</span></strong></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Residential Cleaning -->
+      <div class="col-sm-6">
+        <div class="panel panel-default">
+          <div class="panel-heading"><h3>🧼 Residential Cleaning</h3></div>
+          <div class="panel-body">
+            <p>Regular domestic cleaning, personalised for your home.</p>
+            <p><strong>From: <span style="color: #b28b84;">£___ per session</span></strong></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Note -->
+    <p style="margin-top: 30px;">
+      <em>📩 Final quotes are based on household needs, schedule, and specialist requirements.</em><br>
+      <a href="#contactus" class="btn btn-primary-custom" style="margin-top: 10px;">Request a Quote</a>
+    </p>
+  </div>
+</div>
+<!-- Legal Pages Section -->
+<div id="legalpages" class="container-fluid" style="background-color: #f9f9f9; padding: 60px 20px;">
+  <div class="container">
+    <h2 class="text-center">Legal Information</h2>
+    <div class="panel-group" id="legalAccordion">
+
+      <!-- Privacy Policy -->
+      <div class="panel panel-default" id="privacypolicy">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#privacyCollapse">Privacy Policy</a>
+          </h4>
+        </div>
+        <div id="privacyCollapse" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>We are committed to protecting your privacy. When you contact us or use our website, we may collect your name, email, phone number, and any details you choose to share. This information is used solely to respond to your queries or provide our services.</p>
+            <p>We never sell or share your data with third parties. All personal information is stored securely and used in accordance with UK GDPR. You may request a copy of your data or ask us to delete it by emailing <a href="mailto:kitandisu07@gmail.com">kitandisu07@gmail.com</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Terms and Conditions -->
+      <div class="panel panel-default" id="terms">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#termsCollapse">Terms & Conditions</a>
+          </h4>
+        </div>
+        <div id="termsCollapse" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>By using this website, you agree to the following terms:</p>
+            <ul>
+              <li>All content belongs to The Nala Method and may not be reused without permission.</li>
+              <li>You may not use this site in a way that causes harm or is unlawful.</li>
+              <li>We do not guarantee the accuracy or availability of any external links shared here.</li>
+              <li>We reserve the right to update or remove content at any time without notice.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cookie Policy -->
+      <div class="panel panel-default" id="cookies">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#cookiesCollapse">Cookie Policy</a>
+          </h4>
+        </div>
+        <div id="cookiesCollapse" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>This website may use cookies to improve your browsing experience. Cookies are small files stored on your device that help us understand how visitors use our site.</p>
+            <p>You can choose to disable cookies in your browser settings. By continuing to use our site, you accept our cookie use.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Client Terms -->
+      <div class="panel panel-default" id="clientterms">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" href="#clientTermsCollapse">Client Service Terms</a>
+          </h4>
+        </div>
+        <div id="clientTermsCollapse" class="panel-collapse collapse">
+          <div class="panel-body">
+            <p>Clients booking our services agree to the following:</p>
+            <ul>
+              <li>Bookings must be made at least 48 hours in advance when possible.</li>
+              <li>Cancellations within 24 hours may be subject to a cancellation fee.</li>
+              <li>We strive to place experienced, vetted staff but are not liable for property damage or loss.</li>
+              <li>Specific services and durations should be agreed before work begins.</li>
+            </ul>
+            <p>For full clarity or to raise concerns, please contact us at <a href="mailto:kitandisu07@gmail.com">kitandisu07@gmail.com</a>.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+    
+  </body>
 </html>
